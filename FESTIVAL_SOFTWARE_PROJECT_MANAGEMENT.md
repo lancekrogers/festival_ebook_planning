@@ -46,7 +46,7 @@ festivals/
     ├── 3_<sequence_name>/      # Third sequence (depends on 2 completion)
     │   └── task_f.md
     ├── completed/              # Optional: Completed sequences moved here
-    ├── canceled/               # Optional: Abandoned sequences  
+    ├── canceled/               # Optional: Abandoned sequences
     └── archived/               # Optional: Deprioritized sequences (backlog)
 ```
 
@@ -83,7 +83,7 @@ Establish the principles and quality standards that all workers must follow thro
 
 ### 5. Organize Sequential Work
 
-- Create numbered directories (001*, 002*, etc.) for work that must happen in order
+- Create numbered directories (1*, 2*, etc.) for work that must happen in order
 - Place tasks that can be done in parallel within each sequence directory
 - Each task gets its own markdown file with clear requirements
 
@@ -96,6 +96,7 @@ Festivals scale from simple to complex:
 - **Complex Festival**: Full systems/ and features/ directories with extensive documentation
 
 The optional directories serve specific purposes:
+
 - **specs/**: Store requirements documents, analysis notes, research findings, and planning artifacts
 - **docs/**: House documentation directly related to the festival's goal
 - **completed/**: Move successfully finished festivals or sequences here to keep the active workspace clean
@@ -159,12 +160,14 @@ Festival Rules are a critical component that ensures quality and consistency thr
 ### Common Rules for Software Festivals
 
 1. **Engineering Excellence**
+
    - Prefer refactoring existing code over rewriting from scratch
    - Follow established patterns and conventions in the codebase
    - Apply SOLID principles and avoid over-engineering (YAGNI)
    - Keep functions under 50 lines, files under 500 lines
 
 2. **Quality Standards**
+
    - Write tests for all new functionality
    - Maintain or improve code coverage
    - Run linters and type checkers before marking tasks complete
@@ -179,6 +182,7 @@ Festival Rules are a critical component that ensures quality and consistency thr
 ### Task Integration
 
 Each task should include a "Rules Compliance" section that:
+
 - References relevant rules from FESTIVAL_RULES.md
 - Includes a pre-task checklist
 - Provides a completion checklist for verification
