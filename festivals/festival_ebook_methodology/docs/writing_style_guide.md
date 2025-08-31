@@ -12,12 +12,14 @@ aliases:
 ## Voice and Tone
 
 ### Overall Voice
+
 - **Conversational**: Write like you're explaining to a colleague over coffee
 - **Authoritative**: Confident in the methodology without being preachy
 - **Empathetic**: Acknowledge reader's frustrations with current methods
 - **Practical**: Focus on actionable advice over theory
 
 ### Tone Variations by Section
+
 - **Introduction**: Warm, welcoming, slightly humorous
 - **Principles**: Clear, confident, instructional
 - **Case Studies**: Narrative, engaging, relatable
@@ -27,18 +29,21 @@ aliases:
 ## Writing Guidelines
 
 ### Sentence Structure
+
 - Prefer short, clear sentences
 - Use active voice whenever possible
 - Vary sentence length for rhythm
 - One idea per sentence
 
 ### Technical Terms
+
 - Define on first use
 - Provide glossary entries
 - Use consistently throughout
 - Avoid jargon when plain language works
 
 ### Examples
+
 - Use realistic scenarios
 - Include both simple and complex cases
 - Show both successes and failures
@@ -47,7 +52,8 @@ aliases:
 ## Formatting Conventions
 
 ### Code Examples
-```bash
+
+````bash
 # Use comments to explain non-obvious commands
 mkdir -p festivals/festival_user_auth
 
@@ -135,3 +141,4 @@ festivals/
 - [ ] No unexplained jargon
 - [ ] Active voice predominant
 - [ ] Clear learning progression
+````

@@ -12,7 +12,8 @@ modified: 2025-08-26
 
 ## Objective
 
-Create detailed personas for the ebook's target readers to ensure content meets their needs and expectations.
+Create detailed personas for the ebook's target readers to ensure content meets
+their needs and expectations.
 
 ## Requirements
 
@@ -26,13 +27,11 @@ Create detailed personas for the ebook's target readers to ensure content meets 
 ### Primary Personas
 
 1. **The Frustrated Scrum Developer**
-
    - Background and current challenges
    - What they're looking for in an alternative
    - Key messages to emphasize
 
 2. **The Solo Developer/Freelancer**
-
    - Project management needs
    - Current pain points
    - How festivals can help
@@ -45,7 +44,6 @@ Create detailed personas for the ebook's target readers to ensure content meets 
 ### Secondary Personas
 
 4. **The Agile Coach/Consultant**
-
    - Interest in alternative methodologies
    - Client needs they're trying to address
    - Comparison requirements

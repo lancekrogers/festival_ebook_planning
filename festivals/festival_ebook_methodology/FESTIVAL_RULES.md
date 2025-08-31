@@ -10,23 +10,34 @@ aliases:
 # Festival Rules: Ebook on Festival Methodology
 
 ## Purpose
-This document defines the writing standards, content principles, and quality guidelines that all contributors must follow throughout the ebook festival. Reference these rules before starting any task and during execution to ensure consistent, high-quality content.
+
+This document defines the writing standards, content principles, and quality
+guidelines that all contributors must follow throughout the ebook festival.
+Reference these rules before starting any task and during execution to ensure
+consistent, high-quality content.
 
 ## Content Excellence
 
 ### Writing Principles
-- **Clarity Over Cleverness**: Use simple, direct language that readers can immediately understand
-- **Show, Don't Just Tell**: Include practical examples, code snippets, and real scenarios
+
+- **Clarity Over Cleverness**: Use simple, direct language that readers can
+  immediately understand
+- **Show, Don't Just Tell**: Include practical examples, code snippets, and real
+  scenarios
 - **Progressive Disclosure**: Start simple, add complexity gradually
-- **Reader-Focused**: Always consider what the reader needs to know, not what you want to say
+- **Reader-Focused**: Always consider what the reader needs to know, not what
+  you want to say
 
 ### Voice and Tone
+
 - **Conversational but Professional**: Write as if explaining to a colleague
 - **Empathetic**: Acknowledge reader frustrations with current methodologies
-- **Encouraging**: Emphasize that Festival methodology is approachable and practical
+- **Encouraging**: Emphasize that Festival methodology is approachable and
+  practical
 - **Honest**: Show both successes and challenges in examples
 
 ### Content Structure
+
 - Chapters should have clear learning objectives
 - Use frequent subheadings for easy scanning (every 2-3 paragraphs)
 - Include summaries at chapter ends with key takeaways
@@ -36,6 +47,7 @@ This document defines the writing standards, content principles, and quality gui
 ## Quality Standards
 
 ### Accuracy Requirements
+
 - [ ] All technical claims must be fact-checked
 - [ ] Code examples must be tested and working
 - [ ] File structures and commands must be accurate
@@ -43,6 +55,7 @@ This document defines the writing standards, content principles, and quality gui
 - [ ] Statistics and data must include sources
 
 ### Consistency Checks
+
 - [ ] Terminology used consistently throughout (see glossary)
 - [ ] Examples follow the same naming conventions
 - [ ] Festival structure representations are uniform
@@ -50,6 +63,7 @@ This document defines the writing standards, content principles, and quality gui
 - [ ] Formatting follows established patterns
 
 ### Example Quality
+
 - All examples must be realistic and practical
 - Include both simple and complex scenarios
 - Show complete context, not just fragments
@@ -59,6 +73,7 @@ This document defines the writing standards, content principles, and quality gui
 ## Writing Process
 
 ### Before Writing
+
 1. Review the chapter outline and objectives
 2. Read related chapters for context and consistency
 3. Check the writing style guide (docs/writing_style_guide.md)
@@ -66,6 +81,7 @@ This document defines the writing standards, content principles, and quality gui
 5. Gather all necessary research and examples
 
 ### During Writing
+
 - Keep paragraphs short (2-3 sentences ideal)
 - Use active voice predominantly
 - Include a practical example every 2-3 pages
@@ -73,6 +89,7 @@ This document defines the writing standards, content principles, and quality gui
 - Maintain consistent formatting
 
 ### Review Checklist
+
 - [ ] Learning objectives clearly met
 - [ ] Examples tested and working
 - [ ] Terminology consistent with glossary
@@ -84,7 +101,9 @@ This document defines the writing standards, content principles, and quality gui
 ## Content Standards
 
 ### Chapter Requirements
+
 Each chapter must include:
+
 - Brief summary (2-3 sentences)
 - Learning objectives (3-5 bullet points)
 - Introduction that hooks the reader
@@ -94,6 +113,7 @@ Each chapter must include:
 - References to additional resources
 
 ### Visual Elements
+
 - Diagrams should be simple and clear
 - Use consistent visual style throughout
 - Include captions for all figures
@@ -101,13 +121,13 @@ Each chapter must include:
 - File structures shown in tree format
 
 ### Code and Examples
-```markdown
+
+````markdown
 # Use this format for file structures
-festivals/
-└── festival_name/
-    ├── FESTIVAL_OVERVIEW.md
-    └── 1_sequence/
-        └── task.md
+
+festivals/ └── festival_name/ ├── FESTIVAL_OVERVIEW.md └── 1_sequence/ └──
+task.md
+
 ```text
 
 - Include comments in code examples
@@ -239,3 +259,5 @@ If you need to deviate from these rules:
 2. Explain why it's necessary
 3. Get approval from festival planner
 4. Ensure consistency despite deviation
+```
+````

@@ -4,15 +4,16 @@ aliases:
   - create chapter template
   - create-chapter-template
 tags: []
-created: "2025-08-26"
-modified: "2025-08-26"
+created: '2025-08-26'
+modified: '2025-08-26'
 ---
 
 # Task: Create Standard Chapter Template
 
 ## Objective
 
-Develop a consistent template for all book chapters to ensure uniformity and completeness.
+Develop a consistent template for all book chapters to ensure uniformity and
+completeness.
 
 ## Requirements
 
@@ -75,4 +76,3 @@ Develop a consistent template for all book chapters to ensure uniformity and com
 - Style guide for writers
 - Example filled-in chapter
 - Checklist for chapter completion
-

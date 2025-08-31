@@ -4,33 +4,39 @@ aliases:
   - FESTIVAL RULES TEMPLATE
   - FESTIVAL-RULES-TEMPLATE
 tags: []
-created: "2025-08-26"
-modified: "2025-08-26"
+created: '2025-08-26'
+modified: '2025-08-26'
 ---
 
 # Festival Rules: [Festival Name]
 
 ## Purpose
 
-This document defines the principles, standards, and practices that all workers must follow throughout this festival. Reference these rules before starting any task and during task execution to ensure consistent quality.
+This document defines the principles, standards, and practices that all workers
+must follow throughout this festival. Reference these rules before starting any
+task and during task execution to ensure consistent quality.
 
 ## Engineering Excellence
 
 ### Code Quality
 
-- **Prefer Refactoring Over Rewriting**: Only rewrite code when it's fundamentally flawed or unmaintainable
-- **Follow Existing Patterns**: Study and follow established patterns in the codebase before introducing new ones
+- **Prefer Refactoring Over Rewriting**: Only rewrite code when it's
+  fundamentally flawed or unmaintainable
+- **Follow Existing Patterns**: Study and follow established patterns in the
+  codebase before introducing new ones
 - **Apply SOLID Principles**:
   - Single Responsibility: Each class/function should have one reason to change
   - Open/Closed: Open for extension, closed for modification
   - Liskov Substitution: Derived classes must be substitutable for base classes
-  - Interface Segregation: Many specific interfaces are better than one general interface
+  - Interface Segregation: Many specific interfaces are better than one general
+    interface
   - Dependency Inversion: Depend on abstractions, not concretions
 
 ### Design Principles
 
 - **KISS (Keep It Simple)**: Choose simple solutions over complex ones
-- **YAGNI (You Aren't Gonna Need It)**: Don't add functionality until it's needed
+- **YAGNI (You Aren't Gonna Need It)**: Don't add functionality until it's
+  needed
 - **DRY (Don't Repeat Yourself)**: Eliminate duplication through abstraction
 - **Composition Over Inheritance**: Prefer composition for code reuse
 
@@ -75,13 +81,19 @@ This document defines the principles, standards, and practices that all workers 
 
 ### Task and Sequence Numbering
 
-- **Sequential Execution**: Both sequences and tasks must be prepended with numbers when they must be completed in order (e.g., `1_task_name.md`, `2_task_name.md`)
-- **Parallel Tasks**: Tasks within a sequence that can be worked on in parallel may use the same number (e.g., `1_task_a.md`, `1_task_b.md`, `1_task_c.md`)
+- **Sequential Execution**: Both sequences and tasks must be prepended with
+  numbers when they must be completed in order (e.g., `1_task_name.md`,
+  `2_task_name.md`)
+- **Parallel Tasks**: Tasks within a sequence that can be worked on in parallel
+  may use the same number (e.g., `1_task_a.md`, `1_task_b.md`, `1_task_c.md`)
 - **Verification Workflow**: Every sequence must include:
-  - `N_testing_and_verify.md` - Testing and verification task (where N is the next number after implementation tasks)
+  - `N_testing_and_verify.md` - Testing and verification task (where N is the
+    next number after implementation tasks)
   - `N+1_code_review.md` - Code review task
-  - `N+2_review_results_update_tasks_iterate_if_needed.md` - Final review and iteration task
-- **Results Directory**: Testing results and code review documents must be placed in a `results/` subdirectory within the sequence directory
+  - `N+2_review_results_update_tasks_iterate_if_needed.md` - Final review and
+    iteration task
+- **Results Directory**: Testing results and code review documents must be
+  placed in a `results/` subdirectory within the sequence directory
 
 ### Before Starting a Task
 
@@ -157,7 +169,8 @@ This document defines the principles, standards, and practices that all workers 
 
 ## Festival-Specific Rules
 
-[Add any rules specific to this festival's domain, technology stack, or requirements]
+[Add any rules specific to this festival's domain, technology stack, or
+requirements]
 
 ---
 
@@ -197,4 +210,3 @@ If you need to deviate from these rules, document:
 2. Why it's necessary
 3. What the trade-offs are
 4. Approval from festival planner (if required)
-

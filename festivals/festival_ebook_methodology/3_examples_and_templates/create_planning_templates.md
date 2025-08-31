@@ -10,38 +10,49 @@ aliases:
 # Task: Create Festival Planning Templates
 
 ## Objective
-Develop ready-to-use templates that readers can immediately apply to their own projects.
+
+Develop ready-to-use templates that readers can immediately apply to their own
+projects.
 
 ## Required Templates
 
 ### 1. FESTIVAL_OVERVIEW Template
-```markdown
+
+````markdown
 # Festival: [Goal Name]
 
 ## Goal
+
 [Clear, concrete objective - what will be achieved]
 
 ## Success Criteria
+
 - [ ] [Specific measurable outcome]
 - [ ] [Another measurable outcome]
 - [ ] [Final measurable outcome]
 
 ## Scope
+
 ### In Scope
+
 - [What's included]
 
 ### Out of Scope
+
 - [What's explicitly not included]
 
 ## Constraints
+
 - [Time constraints]
 - [Resource constraints]
 - [Technical constraints]
 
 ## Dependencies
+
 - [External dependencies]
 - [Internal dependencies]
-```text
+
+````text
 
 ### 2. Task Description Template
 ```markdown
@@ -122,3 +133,5 @@ As a [user type], I want to [action] so that [benefit].
 - Template usage guide
 - Customization instructions
 - Digital format files (Markdown, Word, etc.)
+````
+````

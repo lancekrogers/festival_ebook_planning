@@ -8,25 +8,39 @@ tags: []
 
 ## Overview
 
-Festival methodology is a goal-oriented, flexible planning approach that prioritizes concrete objectives over process overhead. Unlike traditional agile methodologies, festivals focus on achieving specific goals rather than adhering to rigid ceremonies and timeboxes.
+Festival methodology is a goal-oriented, flexible planning approach that
+prioritizes concrete objectives over process overhead. Unlike traditional agile
+methodologies, festivals focus on achieving specific goals rather than adhering
+to rigid ceremonies and timeboxes.
 
 ## Core Principles
 
-1. **Goal-First Planning**: Every festival starts with a clear, high-level objective
-2. **Concrete Requirements**: Goals are broken down into tangible, achievable requirements
-3. **Flexible Timeframes**: No artificial sprints or deadlines - festivals complete when the goal is achieved
-4. **Single Initial Planner**: One person with deep understanding plans the festival initially, acting as a benevolent dictator to ensure coherent vision and avoid design-by-committee
-5. **Adaptive Execution**: New requirements can be added as discovered during development
-6. **Sequential Dependencies**: Work is organized in numbered sequences that must complete in order
-7. **Parallel Work Within Sequences**: Tasks within each sequence can be distributed across the team
-8. **Mandatory Verification**: Every sequence includes testing, code review, and results iteration tasks
-9. **Numbered Task Execution**: Tasks and sequences use number prefixes to indicate execution order
+1. **Goal-First Planning**: Every festival starts with a clear, high-level
+   objective
+2. **Concrete Requirements**: Goals are broken down into tangible, achievable
+   requirements
+3. **Flexible Timeframes**: No artificial sprints or deadlines - festivals
+   complete when the goal is achieved
+4. **Single Initial Planner**: One person with deep understanding plans the
+   festival initially, acting as a benevolent dictator to ensure coherent vision
+   and avoid design-by-committee
+5. **Adaptive Execution**: New requirements can be added as discovered during
+   development
+6. **Sequential Dependencies**: Work is organized in numbered sequences that
+   must complete in order
+7. **Parallel Work Within Sequences**: Tasks within each sequence can be
+   distributed across the team
+8. **Mandatory Verification**: Every sequence includes testing, code review, and
+   results iteration tasks
+9. **Numbered Task Execution**: Tasks and sequences use number prefixes to
+   indicate execution order
 
 ## Festival Structure
 
-The festival directory structure is flexible and should be adapted to your needs. Here's a typical example:
+The festival directory structure is flexible and should be adapted to your
+needs. Here's a typical example:
 
-```text
+````text
 festivals/
 ├── completed/                  # Optional: Successfully completed festivals
 ├── canceled/                   # Optional: Abandoned festivals
@@ -177,31 +191,33 @@ festivals/
         ├── 3_code_review.md
         ├── 4_review_results_update_tasks_iterate_if_needed.md
         └── results/
-```
-
+````
 
 ## Festival Rules
 
-Festival Rules are a critical component that ensures quality and consistency throughout the festival. Every festival should include a FESTIVAL_RULES.md file that workers reference before and during task execution.
+Festival Rules are a critical component that ensures quality and consistency
+throughout the festival. Every festival should include a FESTIVAL_RULES.md file
+that workers reference before and during task execution.
 
 ### Purpose of Festival Rules
 
-- **Maintain Quality Standards**: Establish clear quality gates and acceptance criteria
+- **Maintain Quality Standards**: Establish clear quality gates and acceptance
+  criteria
 - **Ensure Consistency**: All workers follow the same principles and practices
-- **Reduce Rework**: Prevent common mistakes by providing clear guidelines upfront
-- **Promote Excellence**: Embed staff-level engineering principles into every task
+- **Reduce Rework**: Prevent common mistakes by providing clear guidelines
+  upfront
+- **Promote Excellence**: Embed staff-level engineering principles into every
+  task
 
 ### Common Rules for Software Festivals
 
 1. **Engineering Excellence**
-
    - Prefer refactoring existing code over rewriting from scratch
    - Follow established patterns and conventions in the codebase
    - Apply SOLID principles and avoid over-engineering (YAGNI)
    - Keep functions under 50 lines, files under 500 lines
 
 2. **Quality Standards**
-
    - Write tests for all new functionality
    - Maintain or improve code coverage
    - Run linters and type checkers before marking tasks complete
@@ -228,5 +244,7 @@ Each task should include a "Rules Compliance" section that:
 3. **Sequence Thoughtfully**: Consider dependencies when creating sequences
 4. **Stay Flexible**: Add new sequences or tasks as needed
 5. **Complete Before Proceeding**: Finish each sequence before starting the next
-6. **Organize Finished Work**: Move completed sequences to completed/, canceled work to canceled/, and deprioritized work to archived/
-7. **Follow Festival Rules**: Reference and adhere to FESTIVAL_RULES.md throughout execution
+6. **Organize Finished Work**: Move completed sequences to completed/, canceled
+   work to canceled/, and deprioritized work to archived/
+7. **Follow Festival Rules**: Reference and adhere to FESTIVAL_RULES.md
+   throughout execution

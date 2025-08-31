@@ -4,15 +4,15 @@ aliases:
   - TASK TEMPLATE
   - TASK-TEMPLATE
 tags: []
-created: "2025-08-26"
-modified: "2025-08-26"
+created: '2025-08-26'
+modified: '2025-08-26'
 ---
 
 # Task: [N_Task_Name]
 
-> **Task Number**: N (where N indicates execution order)
-> **Parallel Execution**: [Yes/No - if yes, list other tasks with same number]
-> **Dependencies**: [List any tasks that must complete before this one]
+> **Task Number**: N (where N indicates execution order) **Parallel Execution**:
+> [Yes/No - if yes, list other tasks with same number] **Dependencies**: [List
+> any tasks that must complete before this one]
 
 ## Objective
 
@@ -89,14 +89,16 @@ Before starting this task, review FESTIVAL_RULES.md, particularly:
 ## For Verification Tasks (testing_and_verify, code_review)
 
 ### Testing Results Location
+
 - Place all testing results in: `./results/testing_results_[timestamp].md`
 
 ### Code Review Results Location
+
 - Place all review documents in: `./results/code_review_[timestamp].md`
 
 ### Iteration Tasks
+
 - When creating `review_results_update_tasks_iterate_if_needed.md`:
   - Review all documents in `./results/` directory
   - Create new numbered tasks if iteration is needed
   - Document decision to proceed or iterate
-

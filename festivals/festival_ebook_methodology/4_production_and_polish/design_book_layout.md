@@ -10,11 +10,13 @@ aliases:
 # Task: Design Book Layout and Typography
 
 ## Objective
+
 Create professional, readable layouts for all book formats (PDF, EPUB, web).
 
 ## Requirements
 
 ### Typography Decisions
+
 - **Body Font**: Source Sans Pro or Inter (16pt)
 - **Heading Font**: Montserrat or Raleway
 - **Code Font**: Fira Code or JetBrains Mono
@@ -22,13 +24,15 @@ Create professional, readable layouts for all book formats (PDF, EPUB, web).
 - **Paragraph Spacing**: 1em
 
 ### Page Layout (PDF)
+
 - **Page Size**: US Letter (8.5" x 11") and A4 variants
 - **Margins**: 1" all around, 1.25" inside for binding
 - **Header**: Chapter title (left), Page number (right)
 - **Footer**: Book title (center)
 
 ### Color Palette
-```text
+
+````text
 Primary Blue:    #1a365d (Headings, links)
 Accent Orange:   #ed8936 (Highlights, CTAs)
 Success Green:   #48bb78 (Checkmarks, success)
@@ -96,3 +100,4 @@ Text:           #2d3748 (Body text)
 - CSS files for web/EPUB
 - InDesign or similar files for PDF
 - Example pages showing all elements
+````

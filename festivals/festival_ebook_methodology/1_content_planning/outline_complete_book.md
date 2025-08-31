@@ -4,14 +4,16 @@ aliases:
   - outline complete book
   - outline-complete-book
 tags: []
-created: "2025-08-26"
-modified: "2025-08-26"
+created: '2025-08-26'
+modified: '2025-08-26'
 ---
+
 # Task: Create Complete Book Outline
 
 ## Objective
 
-Develop a detailed outline for the entire ebook, including all chapters, sections, and key points to cover.
+Develop a detailed outline for the entire ebook, including all chapters,
+sections, and key points to cover.
 
 ## Rules Compliance
 
@@ -59,4 +61,3 @@ Before starting this task, review FESTIVAL_RULES.md, particularly:
 - [ ] Dependencies mapped correctly
 - [ ] Page counts realistic
 - [ ] Rules compliance verified
-
