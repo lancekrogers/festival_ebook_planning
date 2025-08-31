@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - visual design
+  - visual-design
+---
+
 # Feature: Visual Design and Formatting
 
 ## Overview

@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - writing style guide
+  - writing-style-guide
+---
+
 # Writing Style Guide for Festival Methodology Ebook
 
 ## Voice and Tone
@@ -45,16 +54,16 @@ mkdir -p festivals/festival_user_auth
 # Show command output when helpful
 $ ls festivals/
 festival_user_auth/  festival_api_redesign/
-```
+```text
 
 ### Directory Structures
-```
+```text
 festivals/
 └── festival_name/
     ├── FESTIVAL_OVERVIEW.md    # Always include explanatory comments
     └── 001_first_sequence/
         └── task.md             # Keep examples focused
-```
+```text
 
 ### Lists
 - Use bullet points for unordered items
@@ -82,7 +91,7 @@ festivals/
 
 ### Preferred Terms
 - "Festival planner" not "project manager"
-- "Sequence" not "phase" or "stage"  
+- "Sequence" not "phase" or "stage"
 - "Task" not "story" or "ticket"
 - "Goal" not "objective" or "outcome"
 - "Methodology" not "framework" or "process"

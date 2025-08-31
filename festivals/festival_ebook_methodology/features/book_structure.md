@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - book structure
+  - book-structure
+---
+
 # Feature: Book Structure and Organization
 
 ## Overview

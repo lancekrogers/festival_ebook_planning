@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - content planning notes
+  - content-planning-notes
+---
+
 # Content Planning Notes
 
 ## Key Messages to Convey

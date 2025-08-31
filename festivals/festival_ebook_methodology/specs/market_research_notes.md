@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - market research notes
+  - market-research-notes
+---
+
 # Market Research Notes: Project Management Books
 
 ## Current Market Landscape

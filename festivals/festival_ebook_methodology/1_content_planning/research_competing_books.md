@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - research competing books
+  - research-competing-books
+---
+
 # Task: Research Competing Project Management Books
 
 ## Objective

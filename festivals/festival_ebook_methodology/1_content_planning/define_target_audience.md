@@ -1,7 +1,11 @@
 ---
 id: define_target_audience
-aliases: []
-tags: []
+aliases:
+  -
+tags:
+  -
+created: 2025-08-26
+modified: 2025-08-26
 ---
 
 # Task: Define Target Audience and Reader Personas
@@ -57,4 +61,3 @@ Create detailed personas for the ebook's target readers to ensure content meets 
 - Content tone and style guidelines per persona
 - Key benefits to highlight for each audience
 - Potential objections and how to address them
-

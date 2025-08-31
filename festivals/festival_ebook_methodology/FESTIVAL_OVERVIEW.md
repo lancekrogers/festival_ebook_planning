@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - FESTIVAL OVERVIEW
+  - FESTIVAL-OVERVIEW
+---
+
 # Festival: Ebook on Festival Methodology
 
 ## Goal

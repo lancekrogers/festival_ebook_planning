@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - write introduction chapter
+  - write-introduction-chapter
+---
+
 # Task: Write Introduction Chapter
 
 ## Objective

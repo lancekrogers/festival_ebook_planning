@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - FESTIVAL RULES
+  - FESTIVAL-RULES
+---
+
 # Festival Rules: Ebook on Festival Methodology
 
 ## Purpose
@@ -99,7 +108,7 @@ festivals/
     ├── FESTIVAL_OVERVIEW.md
     └── 1_sequence/
         └── task.md
-```
+```text
 
 - Include comments in code examples
 - Show both input and output where relevant

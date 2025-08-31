@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - create marketing materials
+  - create-marketing-materials
+---
+
 # Task: Create Marketing Materials
 
 ## Objective

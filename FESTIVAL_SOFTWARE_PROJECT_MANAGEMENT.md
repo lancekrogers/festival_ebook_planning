@@ -19,12 +19,14 @@ Festival methodology is a goal-oriented, flexible planning approach that priorit
 5. **Adaptive Execution**: New requirements can be added as discovered during development
 6. **Sequential Dependencies**: Work is organized in numbered sequences that must complete in order
 7. **Parallel Work Within Sequences**: Tasks within each sequence can be distributed across the team
+8. **Mandatory Verification**: Every sequence includes testing, code review, and results iteration tasks
+9. **Numbered Task Execution**: Tasks and sequences use number prefixes to indicate execution order
 
 ## Festival Structure
 
 The festival directory structure is flexible and should be adapted to your needs. Here's a typical example:
 
-```
+```text
 festivals/
 ├── completed/                  # Optional: Successfully completed festivals
 ├── canceled/                   # Optional: Abandoned festivals
@@ -37,18 +39,30 @@ festivals/
     ├── systems/                # Optional: System-level documentation for complex festivals
     ├── features/               # Optional: Feature-level documentation for complex festivals
     ├── 1_<sequence_name>/      # First sequence of tasks
-    │   ├── task_a.md          # Tasks that can be worked in parallel
-    │   ├── task_b.md
-    │   └── task_c.md
+    │   ├── 1_task_a.md        # Tasks with same number can be worked in parallel
+    │   ├── 1_task_b.md        # Parallel execution
+    │   ├── 2_task_c.md        # Must complete after tasks 1_*
+    │   ├── 3_testing_and_verify.md     # Testing verification task
+    │   ├── 4_code_review.md            # Code review task
+    │   ├── 5_review_results_update_tasks_iterate_if_needed.md  # Final review and iteration
+    │   └── results/           # Testing results and code review documents
     ├── 2_<sequence_name>/      # Second sequence (depends on 1 completion)
-    │   ├── task_d.md
-    │   └── task_e.md
+    │   ├── 1_task_d.md
+    │   ├── 2_task_e.md
+    │   ├── 3_testing_and_verify.md
+    │   ├── 4_code_review.md
+    │   ├── 5_review_results_update_tasks_iterate_if_needed.md
+    │   └── results/
     ├── 3_<sequence_name>/      # Third sequence (depends on 2 completion)
-    │   └── task_f.md
+    │   ├── 1_task_f.md
+    │   ├── 2_testing_and_verify.md
+    │   ├── 3_code_review.md
+    │   ├── 4_review_results_update_tasks_iterate_if_needed.md
+    │   └── results/
     ├── completed/              # Optional: Completed sequences moved here
     ├── canceled/               # Optional: Abandoned sequences
     └── archived/               # Optional: Deprioritized sequences (backlog)
-```
+```text
 
 Note: This structure is a guideline, not a rigid requirement. Adapt it to fit your festival's specific needs.
 
@@ -83,9 +97,15 @@ Establish the principles and quality standards that all workers must follow thro
 
 ### 5. Organize Sequential Work
 
-- Create numbered directories (1*, 2*, etc.) for work that must happen in order
-- Place tasks that can be done in parallel within each sequence directory
+- Create numbered directories (1_*, 2_*, etc.) for work that must happen in order
+- Within each sequence, prepend task files with numbers to indicate execution order
+- Tasks with the same number can be executed in parallel (e.g., 1_task_a.md, 1_task_b.md)
 - Each task gets its own markdown file with clear requirements
+- Every sequence must include these verification tasks:
+  - `N_testing_and_verify.md` - Testing and verification (where N follows implementation tasks)
+  - `N+1_code_review.md` - Code review
+  - `N+2_review_results_update_tasks_iterate_if_needed.md` - Review results and iterate if needed
+- Create a `results/` subdirectory in each sequence for testing results and code review documents
 
 ## Flexibility and Scaling
 
@@ -126,25 +146,39 @@ Festival methodology works best when:
 
 ## Example Festival
 
-```
+```text
 festivals/
 └── festival_user_onboarding/
     ├── FESTIVAL_OVERVIEW.md
+    ├── FESTIVAL_RULES.md
     ├── features/
     │   ├── email_verification.md
     │   └── kyc_integration.md
     ├── 1_backend_foundation/
-    │   ├── user_model_updates.md
-    │   ├── api_endpoints.md
-    │   └── database_migrations.md
+    │   ├── 1_user_model_updates.md      # Can be done in parallel
+    │   ├── 1_api_endpoints.md           # Can be done in parallel
+    │   ├── 1_database_migrations.md     # Can be done in parallel
+    │   ├── 2_testing_and_verify.md      # Testing verification
+    │   ├── 3_code_review.md             # Code review
+    │   ├── 4_review_results_update_tasks_iterate_if_needed.md
+    │   └── results/                      # Test results and review docs
     ├── 2_frontend_implementation/
-    │   ├── registration_flow.md
-    │   ├── verification_ui.md
-    │   └── error_handling.md
+    │   ├── 1_registration_flow.md       # Can be done in parallel
+    │   ├── 1_verification_ui.md         # Can be done in parallel
+    │   ├── 2_error_handling.md          # Depends on 1_* tasks
+    │   ├── 3_testing_and_verify.md
+    │   ├── 4_code_review.md
+    │   ├── 5_review_results_update_tasks_iterate_if_needed.md
+    │   └── results/
     └── 3_integration_testing/
-        ├── e2e_tests.md
-        └── performance_validation.md
+        ├── 1_e2e_tests.md
+        ├── 1_performance_validation.md
+        ├── 2_testing_and_verify.md
+        ├── 3_code_review.md
+        ├── 4_review_results_update_tasks_iterate_if_needed.md
+        └── results/
 ```
+
 
 ## Festival Rules
 

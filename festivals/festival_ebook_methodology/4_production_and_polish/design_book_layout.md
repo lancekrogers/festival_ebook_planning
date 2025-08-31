@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - design book layout
+  - design-book-layout
+---
+
 # Task: Design Book Layout and Typography
 
 ## Objective
@@ -19,7 +28,7 @@ Create professional, readable layouts for all book formats (PDF, EPUB, web).
 - **Footer**: Book title (center)
 
 ### Color Palette
-```
+```text
 Primary Blue:    #1a365d (Headings, links)
 Accent Orange:   #ed8936 (Highlights, CTAs)
 Success Green:   #48bb78 (Checkmarks, success)
@@ -27,7 +36,7 @@ Warning Yellow:  #ecc94b (Warnings, tips)
 Error Red:       #f56565 (Errors, don'ts)
 Code Background: #f7fafc (Light gray)
 Text:           #2d3748 (Body text)
-```
+```text
 
 ### Special Elements Design
 

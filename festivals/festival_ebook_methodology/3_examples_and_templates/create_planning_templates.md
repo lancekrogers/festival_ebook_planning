@@ -1,3 +1,12 @@
+---
+created: 2025-08-26
+modified: 2025-08-26
+tags: []
+aliases:
+  - create planning templates
+  - create-planning-templates
+---
+
 # Task: Create Festival Planning Templates
 
 ## Objective
@@ -32,7 +41,7 @@ Develop ready-to-use templates that readers can immediately apply to their own p
 ## Dependencies
 - [External dependencies]
 - [Internal dependencies]
-```
+```text
 
 ### 2. Task Description Template
 ```markdown
@@ -60,7 +69,7 @@ Develop ready-to-use templates that readers can immediately apply to their own p
 
 ## Resources
 - [Helpful links or documentation]
-```
+```text
 
 ### 3. Feature Specification Template
 ```markdown
@@ -88,7 +97,7 @@ As a [user type], I want to [action] so that [benefit].
 | Risk | Probability | Impact | Mitigation |
 |------|------------|--------|------------|
 | [Risk] | [L/M/H] | [L/M/H] | [Strategy] |
-```
+```text
 
 ### 4. Quick Planning Checklist
 - [ ] Goal clearly defined and measurable?
