@@ -1,12 +1,13 @@
 # Festival Methodology - AI Agent Build System
 
-Festival methodology is a goal-oriented project management system designed specifically for AI agent development workflows. It organizes work into sequential phases (festivals) with parallel tasks that build systematically toward concrete objectives.
+Festival methodology is a goal-oriented project management system designed specifically for AI agent development workflows. It introduces **phases** as a NEW organizational layer above the existing sequences and tasks structure, providing a three-level hierarchy: **Phases → Sequences → Tasks**.
 
 ## Quick Start Guide
 
 ### 1. Set Up Your Project Workspace
 
 Create a festival directory in your project workspace:
+
 ```
 your_project_workspace/
 ├── your_repos/           # Your existing repositories
@@ -16,6 +17,7 @@ your_project_workspace/
 ### 2. Copy the Template Files
 
 Copy these 4 files from `build_system/` to your `festivals/` directory:
+
 - `FESTIVAL_SOFTWARE_PROJECT_MANAGEMENT.md` - Core methodology documentation
 - `COMMON_INTERFACES_TEMPLATE.md` - Template for defining system interfaces
 - `TASK_TEMPLATE.md` - Template for individual tasks
@@ -41,7 +43,9 @@ Once satisfied with the plan:
 ## Core Components
 
 ### FESTIVAL_SOFTWARE_PROJECT_MANAGEMENT.md
+
 The complete methodology guide covering:
+
 - Core principles (goal-first planning, flexible timeframes)
 - Interface-first planning approach for parallel development
 - Festival structure and directory organization  
@@ -50,7 +54,9 @@ The complete methodology guide covering:
 - Quality verification requirements
 
 ### COMMON_INTERFACES_TEMPLATE.md
+
 Template for defining system interfaces before implementation:
+
 - API endpoints and data contracts
 - Database schemas and relationships
 - Component interfaces and props
@@ -59,7 +65,9 @@ Template for defining system interfaces before implementation:
 - Review and finalization workflow
 
 ### TASK_TEMPLATE.md
+
 Template for individual task files with:
+
 - Clear objective and requirements
 - Rules compliance sections
 - Pre-task and completion checklists
@@ -67,7 +75,9 @@ Template for individual task files with:
 - Quality gates and verification steps
 
 ### FESTIVAL_RULES_TEMPLATE.md
+
 Template for project-specific standards:
+
 - Engineering excellence principles
 - Code quality requirements
 - Testing and documentation standards
@@ -79,22 +89,26 @@ Template for project-specific standards:
 ```
 1. AI Agent Reviews Templates → Understands Methodology
                                 ↓
-2. Agent Creates Festival → Generates Three-Phase Structure
+2. Agent Creates Festival → Generates Phase→Sequence→Task Structure
                            ↓
-3. Phase 1: Plan → Requirements & Architecture Planning
-                   ↓
-4. Phase 2: Define Interfaces → Lock System Contracts
-                               ↓
+3. Phase 001: PLAN → Requirements & Architecture Planning
+                     ↓
+4. Phase 002: DEFINE_INTERFACES → Lock System Contracts
+                                  ↓
 5. Developer Reviews → Iterates on Plan & Interfaces
                       ↓
 6. Finalize Interfaces → Enable Parallel Development
                         ↓
-7. Phase 3: Implement → Parallel Implementation Sequences
-                       ↓
-8. Built-in Verification → Testing, Review, Iteration
+7. Phase 003: IMPLEMENT → Parallel Implementation with Automated Testing
+                         ↓
+8. Phase 004: REVIEW_AND_UAT → User Acceptance & Stakeholder Validation
+                              ↓
+9. Built-in Verification → Testing, Review, Iteration at Each Level
 ```
 
 ## Example Festival Structure
+
+**Three-Level Hierarchy: PHASES → SEQUENCES → TASKS**
 
 ```
 festivals/
@@ -102,69 +116,83 @@ festivals/
     ├── FESTIVAL_OVERVIEW.md          # High-level goal and success criteria
     ├── COMMON_INTERFACES.md          # Master interface definitions
     ├── FESTIVAL_RULES.md             # Project-specific standards
-    ├── 1_Plan/                       # Phase 1: Requirements & Planning
-    │   ├── docs/                     # Planning documentation
-    │   ├── 1_requirements_analysis/
-    │   │   ├── 1_user_research.md
-    │   │   ├── 1_security_requirements.md
-    │   │   ├── 2_requirements_specification.md
-    │   │   ├── 3_testing_and_verify.md
-    │   │   ├── 4_code_review.md
-    │   │   ├── 5_review_results_iterate.md
-    │   │   └── results/
-    │   ├── 2_architecture_design/
-    │   │   ├── 1_system_architecture.md
-    │   │   ├── 1_technology_selection.md
-    │   │   ├── 2_security_architecture.md
-    │   │   ├── 3_testing_and_verify.md
-    │   │   ├── 4_code_review.md
-    │   │   ├── 5_review_results_iterate.md
-    │   │   └── results/
-    │   └── completed/
-    ├── 2_Define_Interfaces/          # Phase 2: Interface Definition
-    │   ├── docs/                     # Interface specifications
-    │   ├── 1_api_contracts/
-    │   │   ├── 1_auth_api_spec.md
-    │   │   ├── 1_user_api_spec.md
-    │   │   ├── 2_error_handling_spec.md
-    │   │   ├── 3_testing_and_verify.md
-    │   │   ├── 4_code_review.md
-    │   │   ├── 5_review_results_iterate.md
-    │   │   └── results/
-    │   ├── 2_data_schemas/
-    │   │   ├── 1_user_model_schema.md
-    │   │   ├── 1_session_schema.md
-    │   │   ├── 2_database_relationships.md
-    │   │   ├── 3_testing_and_verify.md
-    │   │   ├── 4_code_review.md
-    │   │   ├── 5_review_results_iterate.md
-    │   │   └── results/
-    │   └── completed/
-    ├── 3_Implement/                  # Phase 3: Implementation
-    │   ├── docs/                     # Implementation documentation
-    │   ├── 1_backend_foundation/
-    │   │   ├── 1_database_schema.md      # Parallel tasks (same number)
-    │   │   ├── 1_api_endpoints.md        # Based on finalized interfaces
-    │   │   ├── 1_auth_middleware.md      # Can work simultaneously
-    │   │   ├── 2_testing_and_verify.md   # Must complete after 1_* tasks
-    │   │   ├── 3_code_review.md          # Sequential verification
-    │   │   ├── 4_review_results_iterate.md
-    │   │   └── results/                  # Testing and review outputs
-    │   ├── 2_frontend_integration/
-    │   │   ├── 1_login_components.md
-    │   │   ├── 1_auth_context.md
-    │   │   ├── 2_error_handling.md
-    │   │   ├── 3_testing_and_verify.md
-    │   │   ├── 4_code_review.md
-    │   │   ├── 5_review_results_iterate.md
-    │   │   └── results/
-    │   ├── 3_deployment/
-    │   │   ├── 1_security_review.md
-    │   │   ├── 2_testing_and_verify.md
-    │   │   ├── 3_code_review.md
-    │   │   ├── 4_review_results_iterate.md
-    │   │   └── results/
-    │   └── completed/
+    ├── 001_PLAN/                     # PHASE: Requirements & Planning (3-digit)
+    │   ├── docs/                     # Phase-specific documentation
+    │   ├── 01_requirements_analysis/ # SEQUENCE: Requirements work (2-digit)
+    │   │   ├── 01_user_research.md        # TASK (2-digit)
+    │   │   ├── 01_security_requirements.md # TASK (parallel)
+    │   │   ├── 02_requirements_spec.md    # TASK (after 01_ tasks)
+    │   │   ├── 03_testing_and_verify.md   # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   ├── 02_architecture_design/   # SEQUENCE: Architecture work
+    │   │   ├── 01_system_architecture.md  # TASK
+    │   │   ├── 01_technology_selection.md # TASK (parallel)
+    │   │   ├── 02_security_architecture.md # TASK (after 01_ tasks)
+    │   │   ├── 03_testing_and_verify.md   # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   └── completed/                # Completed sequences in this phase
+    ├── 002_DEFINE_INTERFACES/        # PHASE: Interface Definition
+    │   ├── docs/                     # Phase-specific documentation
+    │   ├── 01_api_contracts/         # SEQUENCE: API contract definition
+    │   │   ├── 01_auth_api_spec.md        # TASK
+    │   │   ├── 01_user_api_spec.md        # TASK (parallel)
+    │   │   ├── 02_error_handling_spec.md  # TASK (after 01_ tasks)
+    │   │   ├── 03_testing_and_verify.md   # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   ├── 02_data_schemas/          # SEQUENCE: Data schema definition
+    │   │   ├── 01_user_model_schema.md    # TASK
+    │   │   ├── 01_session_schema.md       # TASK (parallel)
+    │   │   ├── 02_database_relationships.md # TASK (after 01_ tasks)
+    │   │   ├── 03_testing_and_verify.md   # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   └── completed/                # Completed sequences in this phase
+    ├── 003_IMPLEMENT/                # PHASE: Implementation
+    │   ├── docs/                     # Phase-specific documentation
+    │   ├── 01_backend_foundation/    # SEQUENCE: Backend implementation
+    │   │   ├── 01_database_schema.md      # TASK (parallel tasks same number)
+    │   │   ├── 01_api_endpoints.md        # TASK (based on finalized interfaces)
+    │   │   ├── 01_auth_middleware.md      # TASK (can work simultaneously)
+    │   │   ├── 02_automated_testing.md    # TASK (after 01_ tasks)
+    │   │   ├── 03_code_review.md          # TASK
+    │   │   ├── 04_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   ├── 02_frontend_integration/  # SEQUENCE: Frontend implementation
+    │   │   ├── 01_login_components.md     # TASK
+    │   │   ├── 01_auth_context.md         # TASK (parallel)
+    │   │   ├── 02_error_handling.md       # TASK (after 01_ tasks)
+    │   │   ├── 03_automated_testing.md    # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   └── completed/                # Completed sequences in this phase
+    ├── 004_REVIEW_AND_UAT/           # PHASE: User Review & UAT
+    │   ├── docs/                     # Phase-specific documentation
+    │   ├── 01_user_acceptance_testing/ # SEQUENCE: User acceptance testing
+    │   │   ├── 01_uat_planning.md         # TASK
+    │   │   ├── 01_test_scenarios.md       # TASK (parallel)
+    │   │   ├── 02_user_testing_execution.md # TASK (after 01_ tasks)
+    │   │   ├── 03_feedback_analysis.md    # TASK (after 02_ task)
+    │   │   ├── 04_testing_and_verify.md   # TASK
+    │   │   ├── 05_code_review.md          # TASK
+    │   │   ├── 06_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   ├── 02_stakeholder_review/    # SEQUENCE: Stakeholder validation
+    │   │   ├── 01_business_validation.md  # TASK
+    │   │   ├── 01_stakeholder_demos.md    # TASK (parallel)
+    │   │   ├── 02_requirements_sign_off.md # TASK (after 01_ tasks)
+    │   │   ├── 03_testing_and_verify.md   # TASK
+    │   │   ├── 04_code_review.md          # TASK
+    │   │   ├── 05_review_results_iterate.md # TASK
+    │   │   └── results/                   # Sequence results
+    │   └── completed/                # Completed sequences in this phase
     ├── completed/                    # Completed phases
     ├── canceled/                     # Abandoned work
     └── archived/                     # Deprioritized work
@@ -173,22 +201,27 @@ festivals/
 ## Key Benefits
 
 ### For AI Agent Development
+
 - **Step-Based Planning**: Think in development steps, not time estimates
-- **Three-Phase Structure**: Logical progression from planning to interfaces to implementation
+- **Three-Level Hierarchy**: New phases layer organizes existing sequences and tasks
 - **Interface-First Design**: Define all system contracts before implementation begins
-- **Systematic Progress**: Each phase builds on previous work with clear deliverables
-- **Quality Built-In**: Verification tasks prevent technical debt
+- **Systematic Progress**: Each level builds on previous work with clear deliverables
+- **Quality Built-In**: Verification tasks prevent technical debt at every level
 - **Context Preservation**: Rules and documentation maintain consistency across context windows
+- **Scalable Numbering**: 3-digit phases, 2-digit sequences/tasks support hundreds of items
 
 ### For Developers  
+
 - **Clear Phase Separation**: Understand exactly what each phase accomplishes
 - **Parallel Efficiency**: Interface definitions enable true parallel development across teams
 - **Reduced Integration Issues**: Clear contracts minimize rework and conflicts
 - **Logical Organization**: Easy to understand purpose of each directory and sequence
+- **User Validation**: Dedicated phase for user acceptance testing separate from automated testing
 - **Flexible Scope**: Add requirements as discovered during development
 - **Goal Achievement**: Success measured by concrete outcomes, not velocity metrics
 
 ### For Project Management
+
 - **Minimal Overhead**: No daily standups or sprint ceremonies unless needed
 - **Deep Understanding**: Requires thorough problem analysis upfront
 - **Adaptive Execution**: Can pivot and iterate based on learnings
@@ -197,36 +230,44 @@ festivals/
 ## Advanced Features
 
 ### Specialized Agent Assignment
+
 Document in task files which specialized agents should handle specific work:
+
 ```markdown
 ## Agent Assignment
 This task should be handled by the database-specialist agent due to complex schema requirements.
 ```
 
 ### Task Ordering and Dependencies
+
 - **Sequential**: `1_task.md`, `2_task.md`, `3_task.md` (must complete in order)
 - **Parallel**: `1_task_a.md`, `1_task_b.md`, `1_task_c.md` (can work simultaneously)
 - **Mixed**: `1_setup.md`, `2_parallel_a.md`, `2_parallel_b.md`, `3_integration.md`
 
 ### Quality Verification Pattern
+
 Every sequence includes mandatory verification tasks:
+
 - `N_testing_and_verify.md` - Test all implementation
 - `N+1_code_review.md` - Review code quality  
 - `N+2_review_results_iterate.md` - Decide whether to iterate or proceed
 
 ## Best Practices
 
-1. **Start Simple**: Begin with FESTIVAL_OVERVIEW.md and basic three-phase structure
-2. **Work Through Phases**: Complete 1_Plan → 2_Define_Interfaces → 3_Implement in order
+1. **Start Simple**: Begin with FESTIVAL_OVERVIEW.md and basic four-phase structure
+2. **Work Through Phases**: Complete 001_PLAN → 002_DEFINE_INTERFACES → 003_IMPLEMENT → 004_REVIEW_AND_UAT in order
 3. **Define Interfaces First**: Lock all system contracts before any implementation
 4. **Think in Steps**: Plan development steps, not time estimates
 5. **Enable Parallel Work**: Use finalized interfaces to allow simultaneous development
-6. **Build Systematically**: Complete each phase and sequence before starting the next  
-7. **Verify Continuously**: Use built-in testing and review tasks
-8. **Iterate Fearlessly**: Add new requirements and tasks as discovered
-9. **Document Decisions**: Use FESTIVAL_RULES.md to capture important standards
-10. **Organize Results**: Move completed work to `completed/`, abandoned work to `canceled/`
+6. **Separate Testing Types**: Automated testing in implement phase, user testing in review & UAT phase
+7. **Build Systematically**: Complete each phase and sequence before starting the next  
+8. **Verify Continuously**: Use built-in testing and review tasks at each phase
+9. **Iterate Fearlessly**: Add new requirements and tasks as discovered, repeat phases as needed
+10. **Document Decisions**: Use FESTIVAL_RULES.md to capture important standards
+11. **Organize Results**: Move completed work to `completed/`, abandoned work to `canceled/`
+12. **Use Proper Numbering**: 3-digit phases (001_, 002_), 2-digit sequences/tasks (01_, 02_) for scalability
 
 ---
 
 *The festival methodology leverages AI agents' strength in systematic execution while providing the structure needed for complex software development projects.*
+
