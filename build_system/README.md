@@ -16,17 +16,19 @@ your_project_workspace/
 
 ### 2. Copy the Template Files
 
-Copy these 4 files from `build_system/` to your `festivals/` directory:
+Copy these 6 files from `build_system/templates/` to your `festivals/` directory:
 
 - `FESTIVAL_SOFTWARE_PROJECT_MANAGEMENT.md` - Core methodology documentation
 - `COMMON_INTERFACES_TEMPLATE.md` - Template for defining system interfaces
 - `TASK_TEMPLATE.md` - Template for individual tasks
+- `TASK_EXAMPLES.md` - Concrete examples of well-written tasks
 - `FESTIVAL_RULES_TEMPLATE.md` - Template for project standards
+- `FESTIVAL_OVERVIEW_TEMPLATE.md` - Template for project overview and goals
 
 ### 3. Create Your Festival
 
 Tell your AI agent:
-> "Please fully review the 4 markdown files to understand the festival methodology, then create a festival for [your project goal]"
+> "Please fully review the 6 template files to understand the festival methodology, then create a festival for [your project goal]"
 
 ### 4. Review and Iterate
 
@@ -57,11 +59,11 @@ The complete methodology guide covering:
 
 Template for defining system interfaces before implementation:
 
-- API endpoints and data contracts
-- Database schemas and relationships
-- Component interfaces and props
-- Service contracts and dependencies
-- Event/message formats
+- System architecture overview with component tables
+- Communication protocol selection (REST/gRPC/GraphQL/Message Queues/Custom)
+- Data architecture and consistency requirements
+- Interface contracts using tables and diagrams
+- Security and performance specifications
 - Review and finalization workflow
 
 ### TASK_TEMPLATE.md
